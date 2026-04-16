@@ -1,0 +1,10 @@
+{
+  "name": "backend-api-server",
+  "version": "0.1.0",
+  "description": "Spring Boot 백엔드 API 서버 개발 파이프라인. spec-driven 방식의 요구사항 분석 → 실행계획 → 구현 → 테스트/QA → 문서 동기화 → Notion 공유 전체 라이프사이클을 에이전트와 슬래시 커맨드로 제공한다.",
+  "author": {
+    "name": "yohan.an"
+  },
+  "license": "MIT",
+  "keywords": ["spring-boot", "backend", "pipeline", "tdd", "qa", "korean"]
+}

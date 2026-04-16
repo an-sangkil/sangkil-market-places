@@ -1,0 +1,22 @@
+{
+  "name": "my-claude-marketplace",
+  "owner": {
+    "name": "kakaohealthcare"
+  },
+  "metadata": {
+    "description": "카카오헬스케어 Claude Code 플러그인 마켓플레이스",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "backend-api-server",
+      "source": "./plugins/backend-api-server",
+      "description": "Spring Boot 백엔드 API 서버 개발 파이프라인 (spec → plan → build → test → review → qa → notion)",
+      "version": "0.1.0",
+      "author": {
+        "name": "yohan.an"
+      },
+      "keywords": ["spring-boot", "backend", "pipeline", "tdd", "qa", "korean"]
+    }
+  ]
+}
