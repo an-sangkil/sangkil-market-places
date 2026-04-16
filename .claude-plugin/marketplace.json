@@ -17,6 +17,16 @@
         "name": "yohan.an"
       },
       "keywords": ["spring-boot", "backend", "pipeline", "tdd", "qa", "korean"]
+    },
+    {
+      "name": "git-commit-korean",
+      "source": "./plugins/git-commit-korean",
+      "description": "Git 변경사항을 파일 단위로 검토하고 한글 커밋 메시지로 안전하게 커밋하는 스킬",
+      "version": "0.1.0",
+      "author": {
+        "name": "yohan.an"
+      },
+      "keywords": ["git", "commit", "korean", "convention"]
     }
   ]
 }

@@ -1,0 +1,10 @@
+{
+  "name": "git-commit-korean",
+  "version": "0.1.0",
+  "description": "Git 변경사항을 파일 단위로 검토하고 한글 커밋 메시지로 안전하게 커밋하는 스킬을 제공한다.",
+  "author": {
+    "name": "yohan.an"
+  },
+  "license": "MIT",
+  "keywords": ["git", "commit", "korean", "convention"]
+}
