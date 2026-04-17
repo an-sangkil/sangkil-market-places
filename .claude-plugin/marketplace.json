@@ -27,6 +27,26 @@
         "name": "yohan.an"
       },
       "keywords": ["git", "commit", "korean", "convention"]
+    },
+    {
+      "name": "github-pr-korean",
+      "source": "./plugins/github-pr-korean",
+      "description": "현재 브랜치의 전체 커밋을 분석하여 한글 제목과 본문으로 GitHub PR을 생성하는 스킬",
+      "version": "0.1.0",
+      "author": {
+        "name": "yohan.an"
+      },
+      "keywords": ["github", "pull-request", "korean", "convention"]
+    },
+    {
+      "name": "backend-data-pipeline",
+      "source": "./plugins/backend-data-pipeline",
+      "description": "Spring Boot 이벤트 드리븐 데이터 파이프라인 개발 라이프사이클 (spec → plan → build⇄qa → deploy → handoff → notion)",
+      "version": "0.1.0",
+      "author": {
+        "name": "yohan.an"
+      },
+      "keywords": ["spring-boot", "data-pipeline", "event-driven", "pipeline", "tdd", "qa", "deploy", "korean"]
     }
   ]
 }

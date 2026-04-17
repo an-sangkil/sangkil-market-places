@@ -1,0 +1,10 @@
+{
+  "name": "github-pr-korean",
+  "version": "0.1.0",
+  "description": "현재 브랜치의 전체 커밋을 분석하여 한글 제목과 본문으로 GitHub PR을 생성하는 스킬을 제공한다.",
+  "author": {
+    "name": "yohan.an"
+  },
+  "license": "MIT",
+  "keywords": ["github", "pull-request", "korean", "convention"]
+}
