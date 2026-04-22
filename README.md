@@ -1,6 +1,6 @@
 # my-claude-marketplace
 
-카카오헬스케어 Claude Code 플러그인 마켓플레이스
+Backend Claude Code 플러그인 마켓플레이스
 
 ## 플러그인 목록
 
