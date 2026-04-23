@@ -2,7 +2,7 @@
 description: API 명세 마크다운 파일을 Notion 데이터베이스에 업로드
 ---
 
-`document/api-spec/` 하위 마크다운 파일을 Notion API 문서 데이터베이스에 업로드한다.
+`docs/api-spec/` 하위 마크다운 파일을 Notion API 문서 데이터베이스에 업로드한다.
 
 **요청 내용 (선택):**
 $ARGUMENTS
@@ -12,9 +12,9 @@ $ARGUMENTS
 ### 1) 업로드 대상 확인
 
 - 사용자가 파일 경로 또는 도메인명을 명시했으면 그대로 사용
-- 명시 안 했으면 `document/api-spec/` 하위 마크다운 목록을 보여주고 사용자에게 확인
+- 명시 안 했으면 `docs/api-spec/` 하위 마크다운 목록을 보여주고 사용자에게 확인
   ```bash
-  ls -lt document/api-spec/*/*.md | head -10
+  ls -lt docs/api-spec/*/*.md | head -10
   ```
 
 ### 2) notion-api-spec-upload 에이전트 호출
@@ -33,7 +33,7 @@ Agent tool로 다음을 전달:
 
 ## 안전 규칙
 
-- `document/api-spec/` 외부 파일은 업로드하지 않는다
+- `docs/api-spec/` 외부 파일은 업로드하지 않는다
 - 덮어쓰기 전 반드시 사용자 확인을 받는다
 
 ## 결과 보고

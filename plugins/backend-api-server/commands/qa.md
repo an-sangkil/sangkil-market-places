@@ -13,7 +13,7 @@ $ARGUMENTS
 `git status`, `git diff --name-only HEAD`로 수정/생성된 파일 목록 확인.
 
 ### 2) 컨텍스트 확인
-관련 개발 플랜이 `document/exec-plans/{domain}/plan.md`에 있는지 확인. 없으면 사용자에게 "도메인명" 또는 "검증 기준"을 물어본다.
+관련 개발 플랜이 `docs/design/{domain}/plan.md`에 있는지 확인. 없으면 사용자에게 "도메인명" 또는 "검증 기준"을 물어본다.
 
 ### 3) test-qa 에이전트 호출
 
@@ -35,7 +35,7 @@ Agent tool로 다음을 전달:
 
 ## 산출물
 
-`document/exec-plans/{domain}/qa-report.md`
+`docs/output/{domain}/qa-report.md`
 
 ## 결과 보고
 

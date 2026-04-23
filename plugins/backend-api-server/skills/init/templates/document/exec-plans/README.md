@@ -1,21 +1,17 @@
-# document/exec-plans/
+# docs/exec-plans/
 
-기능별 요구사항과 실행계획을 관리하는 디렉토리.
+단건 실행 기록을 관리하는 디렉토리.
 
 ## 파일 구조
 
 ```
 exec-plans/
-├── {domain}/
-│   ├── requirements.md      ← /spec 커맨드로 생성
-│   ├── plan.md              ← /plan 커맨드로 생성
-│   ├── test-report.md       ← /test 커맨드로 생성
-│   ├── review-report.md     ← /review 커맨드로 생성
-│   └── qa-report.md         ← /qa 커맨드로 생성
+├── YYYY-MM-DD-제목.md      ← /build 단독 실행 시 생성
 ```
 
 ## 작성 규칙
 
-- 도메인(기능) 단위로 하위 폴더를 생성한다.
-- 요구사항 문서에는 `공통 아키텍처: document/architecture/backend-application-architecture.md` 참조를 포함한다.
+- 파이프라인 없이 단독 `/build` 실행 시 실행 계획을 기록한다.
+- 설계 문서(requirements, plan)는 `docs/design/{domain}/`에 작성한다.
+- 요구사항 문서에는 `공통 아키텍처: docs/architecture/backend-application-architecture.md` 참조를 포함한다.
 - 공통 아키텍처 내용을 중복 서술하지 않는다.

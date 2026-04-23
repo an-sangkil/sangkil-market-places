@@ -11,7 +11,7 @@ $ARGUMENTS
 
 1. **변경사항 파악** — Bash로 `git status`, `git diff --name-only HEAD`를 실행하여 수정/생성된 파일 목록을 확인한다.
 
-2. **컨텍스트 확인** — 관련 개발 플랜이 `doc/output/{feature-name}/plan.md`에 있는지 확인한다. 없으면 사용자에게 "개발 플랜 경로" 또는 "검증 기준"을 물어본다.
+2. **컨텍스트 확인** — 관련 개발 플랜이 `docs/design/{feature-name}/plan.md`에 있는지 확인한다. 없으면 사용자에게 "개발 플랜 경로" 또는 "검증 기준"을 물어본다.
 
 3. **test-qa 에이전트 호출** — Agent tool로 `test-qa` 에이전트를 호출하며 다음을 전달한다:
    - **mode: `full`** (테스트 실행 + 테스트 품질 리뷰 + 코드 QA 체크리스트 전체)
@@ -26,7 +26,7 @@ $ARGUMENTS
 - `./gradlew test` 실행하여 증거 확보
 - 테스트 품질 리뷰 (DAMP, 상태 기반, 한 개념, Mock 적절성)
 - QA 체크리스트 (기능/코드/보안/데이터/파싱)
-- 이슈 리포트 작성: `doc/output/{feature-name}/qa-report.md`
+- 이슈 리포트 작성: `docs/output/{feature-name}/qa-report.md`
 
 **결과 보고:**
 QA 리포트의 "5. 종합 판단"을 사용자에게 요약 보고한다.

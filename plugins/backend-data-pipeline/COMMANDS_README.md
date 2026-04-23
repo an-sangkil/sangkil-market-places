@@ -103,13 +103,13 @@ LOOP (최대 3회):
 
 | 문서 종류 | 경로 | 작성 시점 |
 |---|---|---|
-| 요구사항 | `doc/output/{feature-name}/requirements.md` | SPEC 단계 |
-| 개발 플랜 | `doc/output/{feature-name}/plan.md` | PLAN 단계 |
-| 테스트 리포트 | `doc/output/{feature-name}/test-report.md` | TEST 단계 |
-| 리뷰 리포트 | `doc/output/{feature-name}/review-report.md` | REVIEW 단계 |
-| QA 리포트 | `doc/output/{feature-name}/qa-report.md` | QA 단계 |
-| 배포 체크리스트 | `doc/output/{feature-name}/deploy-checklist.md` | DEPLOY 단계 |
-| 인수인계 문서 | `doc/output/{feature-name}/deliverable.md` | HANDOFF 단계 |
+| 요구사항 | `docs/design/{feature-name}/requirements.md` | SPEC 단계 |
+| 개발 플랜 | `docs/design/{feature-name}/plan.md` | PLAN 단계 |
+| 테스트 리포트 | `docs/output/{feature-name}/test-report.md` | TEST 단계 |
+| 리뷰 리포트 | `docs/output/{feature-name}/review-report.md` | REVIEW 단계 |
+| QA 리포트 | `docs/output/{feature-name}/qa-report.md` | QA 단계 |
+| 배포 체크리스트 | `docs/output/{feature-name}/deploy-checklist.md` | DEPLOY 단계 |
+| 인수인계 문서 | `docs/output/{feature-name}/deliverable.md` | HANDOFF 단계 |
 
 ### 단계 스킵 허용 여부
 
@@ -135,13 +135,13 @@ LOOP (최대 3회):
 ### `/spec <요구사항>`
 - **요구사항/스펙(PRD) 작성만** 수행
 - `analyze-requirements` 에이전트 호출
-- 산출물: `doc/output/{feature-name}/requirements.md`
+- 산출물: `docs/design/{feature-name}/requirements.md`
 - 다음 단계: `/plan`
 
 ### `/plan <domain 또는 스펙 경로>`
 - 이미 작성된 스펙을 기반으로 **개발 플랜** 작성
 - `development-plan` 에이전트 호출
-- 산출물: `doc/output/{feature-name}/plan.md`
+- 산출물: `docs/design/{feature-name}/plan.md`
 - 다음 단계: `/build`
 
 ### `/build <domain 또는 요구사항>`

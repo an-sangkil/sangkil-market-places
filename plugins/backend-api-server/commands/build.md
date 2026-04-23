@@ -13,7 +13,7 @@ $ARGUMENTS
 
 `$ARGUMENTS`로부터 구현 단서를 결정한다:
 
-- **도메인명이 주어진 경우**: `document/exec-plans/{domain}/plan.md` 읽어 컨텍스트 확보
+- **도메인명이 주어진 경우**: `docs/design/{domain}/plan.md` 읽어 컨텍스트 확보
 - **파일 경로가 주어진 경우**: 해당 경로 사용
 - **직접 요구사항인 경우**: 텍스트를 그대로 전달하며 플랜이 없음을 에이전트에 알림
 
@@ -27,7 +27,7 @@ Agent tool로 다음을 전달:
 
 ## 에이전트 동작
 
-- `document/architecture/backend-application-architecture.md` + `CLAUDE.md` + 유사 도메인 기존 코드 참조
+- `docs/architecture/backend-application-architecture.md` + `CLAUDE.md` + 유사 도메인 기존 코드 참조
 - 구현 순서: Entity → Repository → Service → Controller
 - `./gradlew :karechat-mydata-api:compileJava` 컴파일 검증
 - 기존 테스트가 깨지지 않는지 확인

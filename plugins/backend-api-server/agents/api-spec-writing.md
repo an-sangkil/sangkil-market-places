@@ -1,6 +1,6 @@
 ---
 name: api-spec-writing
-description: 컨트롤러와 DTO를 탐색해 API 명세서를 자율적으로 작성하는 에이전트. 도메인명 또는 컨트롤러 파일 경로를 입력받아 document/api-spec/ 하위에 마크다운 명세서를 생성한다. 여러 엔드포인트를 일괄 문서화할 때 사용한다.
+description: 컨트롤러와 DTO를 탐색해 API 명세서를 자율적으로 작성하는 에이전트. 도메인명 또는 컨트롤러 파일 경로를 입력받아 docs/api-spec/ 하위에 마크다운 명세서를 생성한다. 여러 엔드포인트를 일괄 문서화할 때 사용한다.
 model: sonnet
 tools: Read, Grep, Glob, Write, Edit
 ---
@@ -15,19 +15,19 @@ tools: Read, Grep, Glob, Write, Edit
 2. Request DTO의 필드 타입, 필수 여부, 검증 조건(`@NotNull`, `@Size`, `@Pattern` 등)을 정리한다
 3. Response DTO와 상태코드별 반환 구조를 정리한다
 4. 예외 처리 코드(ExceptionHandler, ErrorCode enum)를 확인해 오류 코드/메시지/발생 조건을 문서화한다
-5. 기존 `document/api-spec/` 파일이 있으면 불일치 항목을 체크하고 보완한다
+5. 기존 `docs/api-spec/` 파일이 있으면 불일치 항목을 체크하고 보완한다
 
 ## 파일 탐색 경로
 
 - Controller: `karechat-mydata-api/src/main/java/com/kakaohealthcare/mydata/api/<domain>/`
 - DTO: `mydata-model/src/main/java/com/kakaohealthcare/mydata/model/request|response/<domain>/`
 - 예외: `mydata-exception/` 또는 각 도메인 하위 ExceptionHandler
-- 기존 명세: `document/api-spec/<domain>/`
+- 기존 명세: `docs/api-spec/<domain>/`
 
 ## 문서 산출 규칙
 
 - 형식: Markdown (`.md`)
-- 저장 경로: `document/api-spec/<domain>/`
+- 저장 경로: `docs/api-spec/<domain>/`
 - 파일명: `kebab-case`, `도메인-엔드포인트-행위.md` 형식
   - 예: `diagnostic-report-query.md`, `user-dataset-agreement-nhis-diagnostic.md`
 

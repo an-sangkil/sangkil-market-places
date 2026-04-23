@@ -27,7 +27,7 @@ Agent tool로 `analyze-requirements` 에이전트를 호출한다.
 
 ## 산출물
 
-`doc/output/{feature-name}/requirements.md`
+`docs/design/{feature-name}/requirements.md`
 
 포함 내용:
 - 목표 (Objectives)
@@ -42,7 +42,7 @@ Agent tool로 `analyze-requirements` 에이전트를 호출한다.
 
 ```
 ✅ 스펙 작성 완료
-📄 산출물: doc/output/{feature-name}/requirements.md
+📄 산출물: docs/design/{feature-name}/requirements.md
 
 ➡️ 다음 단계:
    /plan {feature-name}   → 기술 플랜 작성

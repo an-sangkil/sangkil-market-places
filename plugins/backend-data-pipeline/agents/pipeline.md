@@ -15,12 +15,12 @@ model: opus
 
 ### 1단계: 요구사항 분석 → `analyze-requirements` 에이전트
 - 사용자가 제공한 API 명세서, Figma URL, Notion URL, 텍스트 요구사항을 전달
-- 결과물: `doc/output/{feature-name}/requirements.md`
+- 결과물: `docs/design/{feature-name}/requirements.md`
 - 완료 후 결과를 확인하고 2단계 진행 여부를 사용자에게 확인
 
 ### 2단계: 개발 플랜 작성 → `development-plan` 에이전트
 - 1단계 산출물 경로를 전달
-- 결과물: `doc/output/{feature-name}/plan.md`
+- 결과물: `docs/design/{feature-name}/plan.md`
 - 완료 후 결과를 확인하고 3단계 진행 여부를 사용자에게 확인
 
 ### 3~4단계: 구현-QA 루프 (최대 3회 자동 반복)
@@ -46,7 +46,7 @@ LOOP:
   [4단계] QA 검증 → test-qa 에이전트
     - 구현에서 생성/수정된 파일 목록 + 개발 플랜 경로 전달
     - test-qa는 테스트 실행, 테스트 품질 리뷰, 코드 QA 체크리스트를 수행한다
-    - 결과물: doc/output/{feature-name}/qa-report-attempt-{qa_attempt}.md
+    - 결과물: docs/output/{feature-name}/qa-report-attempt-{qa_attempt}.md
 
   QA 리포트의 "5. 종합 판단"을 읽는다:
 
@@ -68,12 +68,12 @@ LOOP:
 
 ### 5단계: 배포 준비 → `deploy-prep` 에이전트
 - 전체 변경 사항 요약을 전달
-- 결과물: 배포 체크리스트 (`doc/output/{feature-name}/deploy-checklist.md`)
+- 결과물: 배포 체크리스트 (`docs/output/{feature-name}/deploy-checklist.md`)
 - 완료 후 결과를 확인하고 6단계 진행 여부를 사용자에게 확인
 
 ### 6단계: 결과물 생성 → `doc-handoff-writer` 에이전트
 - 전체 산출물 경로를 전달 (requirements, plan, qa-report, deploy-checklist, 변경 파일 목록)
-- 결과물: `doc/output/{feature-name}/deliverable.md`
+- 결과물: `docs/output/{feature-name}/deliverable.md`
 - API가 있는 경우 API 명세서를 포함, 없으면 구현 결과 요약만
 - 완료 후 결과를 확인하고 7단계 진행 여부를 사용자에게 확인
 

@@ -27,7 +27,7 @@ Agent tool로 `requirements-intake-planner` 에이전트를 호출한다.
 
 ## 산출물
 
-`document/exec-plans/{domain}/requirements.md`
+`docs/design/{domain}/requirements.md`
 
 포함 내용:
 - 요구사항 구체화 (목표/성공기준/범위/비범위)
@@ -41,7 +41,7 @@ Agent tool로 `requirements-intake-planner` 에이전트를 호출한다.
 
 ```
 ✅ 스펙 작성 완료
-📄 산출물: document/exec-plans/{domain}/requirements.md
+📄 산출물: docs/design/{domain}/requirements.md
 
 ➡️ 다음 단계:
    /plan {domain}    → 실행계획 + TODO 작성

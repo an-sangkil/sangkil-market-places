@@ -1,4 +1,4 @@
-# document/product-specs/
+# docs/product-specs/
 
 제품 스펙 문서를 관리하는 디렉토리.
 

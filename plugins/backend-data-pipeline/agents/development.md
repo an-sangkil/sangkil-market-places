@@ -25,7 +25,7 @@ model: opus
 
 ## 프로젝트 컨텍스트
 
-**프로젝트 분석 시 반드시 CLAUDE.md와 doc/ 디렉토리를 먼저 읽어서 실제 기술 스택, 아키텍처, 코드 컨벤션을 파악한다.**
+**프로젝트 분석 시 반드시 CLAUDE.md와 docs/ 디렉토리를 먼저 읽어서 실제 기술 스택, 아키텍처, 코드 컨벤션을 파악한다.**
 
 일반적인 데이터 파이프라인 프로젝트 구성:
 - Language: Java 21
@@ -37,13 +37,13 @@ model: opus
 ## 입력
 
 ### 모드 1: 신규 구현
-오케스트레이터로부터 `doc/output/{feature-name}/plan.md` 경로를 전달받는다.
+오케스트레이터로부터 `docs/design/{feature-name}/plan.md` 경로를 전달받는다.
 해당 플랜의 태스크 목록과 파일 변경 계획을 기반으로 구현한다.
 
 ### 모드 2: QA 피드백 기반 수정
 오케스트레이터로부터 다음을 전달받는다:
-- 개발 플랜 경로: `doc/output/{feature-name}/plan.md`
-- QA 리포트 경로: `doc/output/{feature-name}/qa-report-attempt-{N}.md`
+- 개발 플랜 경로: `docs/design/{feature-name}/plan.md`
+- QA 리포트 경로: `docs/output/{feature-name}/qa-report-attempt-{N}.md`
 
 QA 리포트의 "4. 발견된 이슈" 테이블에 기재된 항목만 수정한다.
 이슈와 무관한 코드는 변경하지 않는다.
@@ -53,7 +53,7 @@ QA 리포트의 "4. 발견된 이슈" 테이블에 기재된 항목만 수정한
 파이프라인 없이 직접 호출된 경우. 구현뿐 아니라 문서도 직접 관리한다.
 
 **구현 전:**
-- `doc/exec-plans/YYYY-MM-DD-제목.md` 계획 문서를 작성한다
+- `docs/exec-plans/YYYY-MM-DD-제목.md` 계획 문서를 작성한다
 - 기존 관련 문서를 읽고 컨텍스트를 파악한다
 
 **구현 중:**

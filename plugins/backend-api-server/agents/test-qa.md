@@ -119,9 +119,9 @@ tools: Read, Grep, Glob, Write, Edit, Bash
 
 산출 경로는 focus에 따라 다르다 (도메인 파악 가능한 경우):
 
-- `focus=test-only` → `document/exec-plans/{domain}/test-report.md`
-- `focus=review-only` → `document/exec-plans/{domain}/review-report.md`
-- `focus=full` → `document/exec-plans/{domain}/qa-report.md` (파이프라인 루프 시 `qa-report-attempt-{N}.md`)
+- `focus=test-only` → `docs/output/{domain}/test-report.md`
+- `focus=review-only` → `docs/output/{domain}/review-report.md`
+- `focus=full` → `docs/output/{domain}/qa-report.md` (파이프라인 루프 시 `qa-report-attempt-{N}.md`)
 
 수행하지 않은 섹션은 "모드에 의해 스킵됨"으로 표시.
 
@@ -181,7 +181,7 @@ tools: Read, Grep, Glob, Write, Edit, Bash
 ## 원칙
 
 - 테스트 이름만 쓰지 말고 `expected`를 검증 가능한 문장으로 작성한다
-- API 계약 테스트는 `document/api-spec/` 명세와의 일치 여부를 명시한다
+- API 계약 테스트는 `docs/api-spec/` 명세와의 일치 여부를 명시한다
 - CI 게이트는 pass/fail 기준이 보이게 작성한다
 - 구현에 없는 테스트 대상을 추측으로 추가하지 않는다
 - 이슈 0건으로 PASS하지 않는다 — 완벽한 코드는 없다

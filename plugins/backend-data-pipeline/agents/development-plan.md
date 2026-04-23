@@ -19,7 +19,7 @@ model: sonnet
 
 ## 입력
 
-오케스트레이터로부터 `doc/output/{feature-name}/requirements.md` 경로를 전달받는다.
+오케스트레이터로부터 `docs/design/{feature-name}/requirements.md` 경로를 전달받는다.
 해당 파일을 읽고 개발 플랜을 작성한다.
 
 ## 실행 절차
@@ -74,7 +74,7 @@ model: sonnet
 - 외부 의존성 리스크
 
 ### 6) 문서 작성
-결과를 `doc/output/{feature-name}/plan.md` 에 저장한다.
+결과를 `docs/design/{feature-name}/plan.md` 에 저장한다.
 
 ## 출력 형식
 
@@ -82,7 +82,7 @@ model: sonnet
 # {기능명} 개발 플랜
 
 작성일: {YYYY-MM-DD}
-요구사항 문서: doc/output/{feature-name}/requirements.md
+요구사항 문서: docs/design/{feature-name}/requirements.md
 
 ## 1. 요약
 | 항목 | 내용 |
@@ -137,4 +137,4 @@ model: sonnet
 ## 완료 기준
 - 요구사항이 빠짐없이 Task로 매핑됨
 - 파일 변경 계획이 구체적 경로 수준으로 작성됨
-- `doc/output/{feature-name}/plan.md` 저장됨
+- `docs/design/{feature-name}/plan.md` 저장됨

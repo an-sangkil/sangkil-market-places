@@ -1,8 +1,8 @@
 ---
-description: 프로젝트에 backend-api-server 플러그인 템플릿을 초기화 (document/ 구조 생성)
+description: 프로젝트에 backend-api-server 플러그인 템플릿을 초기화 (docs/ 구조 생성)
 ---
 
-init 스킬을 실행하여 프로젝트에 document/ 구조와 아키텍처 템플릿을 생성한다.
+init 스킬을 실행하여 프로젝트에 docs/ 구조와 아키텍처 템플릿을 생성한다.
 
 **요청 내용:**
 $ARGUMENTS

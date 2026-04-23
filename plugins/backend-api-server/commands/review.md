@@ -76,7 +76,7 @@ Agent tool로 다음을 전달:
 
 ## 산출물
 
-`document/exec-plans/{domain}/review-report.md` (도메인 파악 가능한 경우)
+`docs/output/{domain}/review-report.md` (도메인 파악 가능한 경우)
 
 ## 결과 보고
 
