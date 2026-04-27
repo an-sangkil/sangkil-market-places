@@ -39,6 +39,16 @@
       "keywords": ["github", "pull-request", "korean", "convention"]
     },
     {
+      "name": "discuss",
+      "source": "./plugins/discuss",
+      "description": "코드 수정 없이 기술 논의/토론 모드로 전환하는 스킬",
+      "version": "0.1.0",
+      "author": {
+        "name": "yohan.an"
+      },
+      "keywords": ["discuss", "discussion", "architecture", "korean"]
+    },
+    {
       "name": "backend-data-pipeline",
       "source": "./plugins/backend-data-pipeline",
       "description": "Spring Boot 이벤트 드리븐 데이터 파이프라인 개발 라이프사이클 (spec → plan → build⇄qa → deploy → handoff → notion)",

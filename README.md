@@ -8,6 +8,7 @@ Backend Claude Code 플러그인 마켓플레이스
 |---------|------|--------|
 | **backend-api-server** | Spring Boot 백엔드 API 서버 개발 파이프라인 (spec → plan → build → test → review → qa → notion) | spring-boot, backend, pipeline, tdd, qa |
 | **backend-data-pipeline** | Spring Boot 이벤트 드리븐 데이터 파이프라인 개발 라이프사이클 (spec → plan → build⇄qa → deploy → handoff → notion) | spring-boot, data-pipeline, event-driven |
+| **discuss** | 코드 수정 없이 기술 논의/토론 모드로 전환 | discuss, architecture, korean |
 | **git-commit-korean** | Git 변경사항을 파일 단위로 검토하고 한글 커밋 메시지로 안전하게 커밋 | git, commit, korean |
 | **github-pr-korean** | 현재 브랜치의 전체 커밋을 분석하여 한글 제목과 본문으로 GitHub PR 생성 | github, pull-request, korean |
 
