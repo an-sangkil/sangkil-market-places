@@ -60,6 +60,10 @@ LOOP:
         → "동일 이슈가 반복되어 자동 수정이 어렵습니다." 보고 후 중단
       새로운 이슈:
         → 자동으로 LOOP 반복 (사용자 승인 불필요)
+
+  모드 2 수정 시 development 에이전트는 docs/references/qa/triage-procedure.md의 Triage 5단계를 따른다:
+    Reproduce → Localize → Reduce → Root Cause → Guard
+    (상세 절차, 금지/허용 패턴, FAIL 리포트 기술 방법은 해당 문서 참조)
 ```
 
 **동일 이슈 판단 기준:**

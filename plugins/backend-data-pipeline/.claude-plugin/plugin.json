@@ -1,7 +1,7 @@
 {
   "name": "backend-data-pipeline",
-  "version": "0.1.0",
-  "description": "Spring Boot 이벤트 드리븐 데이터 파이프라인 개발 라이프사이클. 요구사항 분석 → 개발 플랜 → TDD 구현⇄QA 자동 루프 → 배포 준비 → 인수인계 문서 → Notion 공유까지 전체 파이프라인을 에이전트와 슬래시 커맨드로 제공한다.",
+  "version": "0.2.0",
+  "description": "Spring Boot 이벤트 드리븐 데이터 파이프라인 개발 라이프사이클 (9단계). SPEC → PLAN → BUILD → REVIEW → TEST → QA → DEPLOY → HANDOFF → SHARE 전체 파이프라인을 에이전트와 슬래시 커맨드로 제공한다. docs/ 초기화 스킬과 참조 문서 템플릿 포함.",
   "author": {
     "name": "yohan.an"
   },

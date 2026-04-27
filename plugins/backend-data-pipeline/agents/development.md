@@ -34,6 +34,14 @@ model: opus
 - Messaging: 메시지 큐 (Pub/Sub, Kafka 등)
 - Architecture: 메시지 수신 → Job 초기화 → Job 관리 → 데이터 수집 → 파싱/변환 → 저장
 
+**필수 참고 문서** — 프로젝트에 아래 문서가 있으면 구현 전 반드시 읽고 숙지한다:
+- `docs/architecture/data-pipeline-architecture.md` — 파이프라인 구조 및 디자인 패턴
+- `docs/architecture/code-convention.md` — 패키지 구조, 클래스 네이밍, 신규 코드 작성 가이드
+- `docs/references/development/testing-patterns.md` — TDD, DAMP, 상태기반 테스트 기준
+- `docs/references/development/security-checklist.md` — MyBatis, 로깅, 암호화 보안 규칙
+- `docs/references/qa/triage-procedure.md` — QA 이슈 수정 절차 (Prove-It + Triage 5단계)
+- `docs/references/anti-rationalization.md` — 에이전트 변명 차단 규칙
+
 ## 입력
 
 ### 모드 1: 신규 구현
@@ -117,9 +125,18 @@ QA 리포트의 "4. 발견된 이슈" 테이블에 기재된 항목만 수정한
 3. Refactor — 테스트가 통과하는 상태에서 코드를 정리한다.
 ```
 
-### 상세 원칙
+### 상세 원칙 — `docs/references/development/testing-patterns.md` 참조
 
-프로젝트에 테스트 관련 문서(doc/references/testing-patterns.md 등)가 있으면 반드시 읽고 따른다.
+프로젝트에 이 파일이 있으면 **단일 기준 문서**이다. 구현 전 반드시 읽고 숙지한다.
+
+포함 내용:
+- 테스트 대상 vs 비대상
+- 테스트 작성 규칙 (Given-When-Then, 테스트 규모)
+- DAMP 원칙 (테스트 코드는 중복 허용)
+- 상태 기반 테스트 우선 (`verify()` 남용 금지)
+- 한 테스트 = 한 개념
+- Mock 사용 원칙 (외부 의존성만)
+- **Anti-Rationalization — 테스트 스킵 금지** (`docs/references/anti-rationalization.md` §3)
 
 핵심 요약:
 - 조건 분기 있는 로직, 데이터 변환 로직, 실수하기 쉬운 패턴(null/날짜/1:N)은 **반드시** 테스트
@@ -128,17 +145,17 @@ QA 리포트의 "4. 발견된 이슈" 테이블에 기재된 항목만 수정한
 
 ## 모드 2 수정 절차: Prove-It + Triage
 
-QA 피드백 기반 수정(모드 2)에서는 Triage 5단계를 따른다.
+QA 피드백 기반 수정(모드 2)에서는 **`docs/references/qa/triage-procedure.md`의 Triage 5단계**를 따른다.
 
 ```
 1. Reproduce — 재현 테스트 작성 → 실패 확인 (Red)
-2. Localize  — 문제 위치 특정
+2. Localize  — 문제 위치 특정 (Parser? Saver? SQL?)
 3. Reduce    — 최소 재현 케이스
 4. Root Cause — "왜?"를 반복하여 근본 원인 (5 Whys)
 5. Guard     — 수정 후 테스트 통과 확인 (Green)
 ```
 
-**금지:** null 체크 추가, try-catch 감싸기 등 증상만 가리는 수정. 근본 원인을 찾아서 고친다.
+**금지:** null 체크 추가, try-catch 감싸기 등 증상만 가리는 수정. 근본 원인을 찾아서 고친다. 금지/허용 패턴 상세는 triage-procedure.md 참조.
 
 ## 실행 절차
 

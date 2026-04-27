@@ -13,9 +13,9 @@ $ARGUMENTS
 
 `$ARGUMENTS`로부터 feature-name을 결정한다:
 
-- **feature-name이 주어진 경우**: `docs/design/{feature-name}/`, `docs/output/{feature-name}/` 사용
+- **feature-name이 주어진 경우**: `docs/output/{feature-name}/` 사용
 - **인자가 없는 경우**:
-  - `ls -lt docs/design/` 로 최근 작업 후보 제시
+  - `ls -lt docs/output/` 로 최근 작업 후보 제시
   - 사용자에게 어떤 feature에 대한 handoff인지 확인
 
 ### 2) 가용 산출물 수집
