@@ -1,4 +1,4 @@
-# document/api-spec/
+# docs/api-spec/
 
 API 엔드포인트 명세를 관리하는 디렉토리.
 

@@ -21,9 +21,9 @@ model: sonnet
 ## 입력
 
 오케스트레이터로부터 전체 파이프라인의 산출물 경로를 전달받는다:
-- 요구사항: `doc/output/{feature-name}/requirements.md`
-- 개발 플랜: `doc/output/{feature-name}/plan.md`
-- QA 리포트: `doc/output/{feature-name}/qa-report.md`
+- 요구사항: `docs/design/{feature-name}/requirements.md`
+- 개발 플랜: `docs/design/{feature-name}/plan.md`
+- QA 리포트: `docs/output/{feature-name}/qa-report.md`
 
 ## 실행 절차
 
@@ -64,7 +64,7 @@ model: sonnet
 - 기능 플래그 적용 가능 여부
 
 ### 5) 배포 체크리스트 작성
-결과를 `doc/output/{feature-name}/deploy-checklist.md` 에 저장한다.
+결과를 `docs/output/{feature-name}/deploy-checklist.md` 에 저장한다.
 
 ## 출력 형식
 
@@ -117,4 +117,4 @@ model: sonnet
 - `./gradlew build` 성공 확인됨
 - DB 마이그레이션 DDL 확인됨
 - 배포 순서와 롤백 계획이 작성됨
-- `doc/output/{feature-name}/deploy-checklist.md` 저장됨
+- `docs/output/{feature-name}/deploy-checklist.md` 저장됨

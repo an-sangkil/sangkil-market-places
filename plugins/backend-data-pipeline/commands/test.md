@@ -20,7 +20,7 @@ $ARGUMENTS
 - `./gradlew test` 실행하여 증거 확보
 - 테스트 품질 리뷰 (커버리지, DAMP, 상태기반, Mock 적절성)
 - 코드 QA 체크리스트는 **스킵**
-- 산출물: `doc/output/{feature-name}/test-report.md`
+- 산출물: `docs/output/{feature-name}/test-report.md`
 
 **결과 보고:**
 테스트 통과 여부와 테스트 품질 이슈를 간단히 요약하여 사용자에게 보고한다.

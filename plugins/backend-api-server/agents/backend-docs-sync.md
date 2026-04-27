@@ -1,6 +1,6 @@
 ---
 name: backend-docs-sync
-description: 구현 코드와 문서를 비교해 불일치를 탐지하고 개발 문서·API 문서를 자율 동기화하는 에이전트. 도메인명 또는 변경된 파일 경로를 입력받아 document/ 하위 파일을 갱신한다.
+description: 구현 코드와 문서를 비교해 불일치를 탐지하고 개발 문서·API 문서를 자율 동기화하는 에이전트. 도메인명 또는 변경된 파일 경로를 입력받아 docs/ 하위 파일을 갱신한다.
 model: sonnet
 tools: Read, Grep, Glob, Write, Edit
 ---
@@ -14,8 +14,8 @@ tools: Read, Grep, Glob, Write, Edit
 
 - 대상 도메인의 Controller, Service, DTO 파일을 탐색한다
 - 기존 문서 파일을 탐색한다
-  - 기획/아키텍처: `document/exec-plans/`, `document/architecture/`
-  - API 명세: `document/api-spec/<domain>/`
+  - 기획/아키텍처: `docs/design/`, `docs/architecture/`
+  - API 명세: `docs/api-spec/<domain>/`
 - 코드와 문서를 1:1로 대조해 불일치 항목을 먼저 식별한다
 
 ## 작업 흐름

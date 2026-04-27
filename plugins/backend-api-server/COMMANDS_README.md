@@ -82,13 +82,13 @@
 
 | 문서 종류 | 경로 | 작성 시점 |
 |---|---|---|
-| 요구사항 | `document/exec-plans/{domain}/requirements.md` | SPEC 단계 |
-| 실행계획 | `document/exec-plans/{domain}/plan.md` | PLAN 단계 |
-| 테스트 리포트 | `document/exec-plans/{domain}/test-report.md` | TEST 단계 |
-| 리뷰 리포트 | `document/exec-plans/{domain}/review-report.md` | REVIEW 단계 |
-| QA 리포트 | `document/exec-plans/{domain}/qa-report.md` | QA 단계 |
-| API 명세 | `document/api-spec/{domain}/*.md` | BUILD 이후 |
-| 제품 스펙 | `document/product-specs/{feature}/*.md` | 수시 |
+| 요구사항 | `docs/design/{domain}/requirements.md` | SPEC 단계 |
+| 실행계획 | `docs/design/{domain}/plan.md` | PLAN 단계 |
+| 테스트 리포트 | `docs/output/{domain}/test-report.md` | TEST 단계 |
+| 리뷰 리포트 | `docs/output/{domain}/review-report.md` | REVIEW 단계 |
+| QA 리포트 | `docs/output/{domain}/qa-report.md` | QA 단계 |
+| API 명세 | `docs/api-spec/{domain}/*.md` | BUILD 이후 |
+| 제품 스펙 | `docs/product-specs/{feature}/*.md` | 수시 |
 
 ### 단계 스킵 허용 여부
 
@@ -107,13 +107,13 @@
 ### `/spec <요구사항>`
 - **요구사항/스펙(PRD) 작성만** 수행
 - `requirements-intake-planner` 에이전트 호출
-- 산출물: `document/exec-plans/{domain}/requirements.md`
+- 산출물: `docs/design/{domain}/requirements.md`
 - 다음 단계: `/plan`
 
 ### `/plan <domain 또는 스펙 경로>`
 - 이미 작성된 스펙을 기반으로 **6단계 실행계획과 TODO**만 작성
 - `requirements-todo-planner` 에이전트 호출
-- 산출물: `document/exec-plans/{domain}/plan.md`
+- 산출물: `docs/design/{domain}/plan.md`
 - 다음 단계: `/build`
 
 ### `/build <domain 또는 요구사항>`
@@ -150,7 +150,7 @@
 - 단독으로 쓸 때: 배포 직전 최종 검증 용도
 
 ### `/notion-upload [경로 또는 도메인]`
-- `document/api-spec/` 하위 마크다운을 Notion API 문서 DB에 업로드
+- `docs/api-spec/` 하위 마크다운을 Notion API 문서 DB에 업로드
 - 중복 페이지 확인 후 create/update 선택
 - 경로 미지정 시 최근 수정된 API 명세 후보 제시
 
@@ -184,5 +184,5 @@ $ARGUMENTS
 
 - 에이전트 정의: `.claude/agents/`
 - 스킬 정의: `.claude/skills/`
-- 아키텍처 규칙: `document/architecture/backend-application-architecture.md`
+- 아키텍처 규칙: `docs/architecture/backend-application-architecture.md`
 - 프로젝트 규칙: `CLAUDE.md`

@@ -1,6 +1,6 @@
 ---
 name: notion-api-spec-upload
-description: document/api-spec/ 하위 마크다운 명세서를 Notion API 문서 데이터베이스에 자율 업로드하는 에이전트. 파일 경로 또는 도메인명을 입력받아 중복 확인 후 생성/업데이트한다.
+description: docs/api-spec/ 하위 마크다운 명세서를 Notion API 문서 데이터베이스에 자율 업로드하는 에이전트. 파일 경로 또는 도메인명을 입력받아 중복 확인 후 생성/업데이트한다.
 model: sonnet
 tools: Read, Glob, Grep, mcp__claude_ai_Notion__notion-create-pages, mcp__claude_ai_Notion__notion-fetch, mcp__claude_ai_Notion__notion-search, mcp__claude_ai_Notion__notion-update-page
 ---
@@ -17,7 +17,7 @@ tools: Read, Glob, Grep, mcp__claude_ai_Notion__notion-create-pages, mcp__claude
 ### 1) 대상 파일 결정
 
 - 입력이 있으면 해당 파일 경로(또는 파일명 키워드)를 사용한다
-- 입력이 없으면 `document/api-spec/` 하위 마크다운 파일 목록을 출력하고 업로드할 파일을 확인한다
+- 입력이 없으면 `docs/api-spec/` 하위 마크다운 파일 목록을 출력하고 업로드할 파일을 확인한다
 
 ### 2) 파일 읽기
 
@@ -71,7 +71,7 @@ children: 마크다운 내용을 Notion 블록으로 변환
 
 ## 안전 규칙
 
-- `document/api-spec/` 외부 파일은 업로드하지 않는다
+- `docs/api-spec/` 외부 파일은 업로드하지 않는다
 - 사용자가 명시하지 않은 파일을 임의로 업로드하지 않는다
 - 덮어쓰기 전 반드시 사용자 확인을 받는다
 - Notion API 오류 시 오류 내용을 그대로 출력하고 재시도 여부를 확인한다

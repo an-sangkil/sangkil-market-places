@@ -13,18 +13,18 @@ $ARGUMENTS
 
 `$ARGUMENTS`로부터 feature-name을 결정한다:
 
-- **feature-name이 주어진 경우**: `doc/output/{feature-name}/` 사용
+- **feature-name이 주어진 경우**: `docs/output/{feature-name}/` 사용
 - **인자가 없는 경우**:
-  - `ls -lt doc/output/` 로 최근 작업 후보 제시
+  - `ls -lt docs/output/` 로 최근 작업 후보 제시
   - 사용자에게 어떤 feature에 대한 handoff인지 확인
 
 ### 2) 가용 산출물 수집
 
 다음 파일들의 존재 여부를 확인한다:
-- `doc/output/{feature-name}/requirements.md` (스펙)
-- `doc/output/{feature-name}/plan.md` (개발 플랜)
-- `doc/output/{feature-name}/qa-report*.md` (QA 결과)
-- `doc/output/{feature-name}/deploy-checklist.md` (배포 체크리스트)
+- `docs/design/{feature-name}/requirements.md` (스펙)
+- `docs/design/{feature-name}/plan.md` (개발 플랜)
+- `docs/output/{feature-name}/qa-report*.md` (QA 결과)
+- `docs/output/{feature-name}/deploy-checklist.md` (배포 체크리스트)
 - `git diff` 변경 파일 목록
 
 일부 파일이 없어도 진행한다. 없는 섹션은 "해당 단계를 수행하지 않음"으로 표시.
@@ -35,7 +35,7 @@ Agent tool로 `doc-handoff-writer` 에이전트를 호출하며 수집된 경로
 
 ## 산출물
 
-`doc/output/{feature-name}/deliverable.md`
+`docs/output/{feature-name}/deliverable.md`
 
 포함 섹션:
 1. 개요
@@ -51,7 +51,7 @@ Agent tool로 `doc-handoff-writer` 에이전트를 호출하며 수집된 경로
 
 ```
 ✅ 인수인계 문서 작성 완료
-📄 산출물: doc/output/{feature-name}/deliverable.md
+📄 산출물: docs/output/{feature-name}/deliverable.md
 
 ➡️ 다음 단계:
    /notion-upload   → Notion으로 업로드

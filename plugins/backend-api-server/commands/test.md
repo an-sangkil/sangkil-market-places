@@ -44,7 +44,7 @@ Agent tool로 다음을 전달:
 
 ## 산출물
 
-`document/exec-plans/{domain}/test-report.md` (해당 도메인이 파악되는 경우)
+`docs/output/{domain}/test-report.md` (해당 도메인이 파악되는 경우)
 
 ## 결과 보고
 

@@ -62,5 +62,5 @@
 ## 기능 문서 작성 규칙
 
 - 기능별 실행계획 문서에는 아래 문구를 포함한다.
-  - `공통 아키텍처: document/architecture/backend-application-architecture.md`
+  - `공통 아키텍처: docs/architecture/backend-application-architecture.md`
 - 기능 문서에 공통 구조를 중복 서술하지 않고, 본 문서 링크로 대체한다.

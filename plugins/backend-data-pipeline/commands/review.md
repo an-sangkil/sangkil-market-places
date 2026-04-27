@@ -78,7 +78,7 @@ Agent tool로 다음을 전달:
 - 테스트 실행 **스킵** (빠름)
 - 테스트 품질 리뷰 **스킵**
 - 코드 QA 체크리스트만 수행 (기능/코드품질/보안/데이터/파싱)
-- 산출물: `doc/output/{feature-name}/review-report.md`
+- 산출물: `docs/output/{feature-name}/review-report.md`
 
 ## 결과 보고
 

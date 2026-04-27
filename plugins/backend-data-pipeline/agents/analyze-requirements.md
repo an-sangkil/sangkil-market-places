@@ -65,7 +65,7 @@ model: sonnet
 - 기존 코드 수정이 필요한가
 
 ### 4) 문서 작성
-분석 결과를 `doc/output/{feature-name}/requirements.md` 에 저장한다.
+분석 결과를 `docs/design/{feature-name}/requirements.md` 에 저장한다.
 
 ## 출력 형식
 
@@ -106,4 +106,4 @@ model: sonnet
 - 모든 소스에서 정보 추출 완료
 - 기능/비기능 요구사항에 ID 부여되어 정리됨
 - 기존 코드베이스 매핑 완료
-- `doc/output/{feature-name}/requirements.md` 저장됨
+- `docs/design/{feature-name}/requirements.md` 저장됨

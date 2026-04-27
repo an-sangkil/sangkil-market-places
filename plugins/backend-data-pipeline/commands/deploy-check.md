@@ -15,14 +15,14 @@ $ARGUMENTS
 
 2. **변경 사항 수집** — 다음을 정리하여 deploy-prep 에이전트에게 전달:
    - 변경된 파일 목록 (`git diff --name-only main...HEAD`)
-   - 개발 플랜/결과물 문서 경로 (`doc/output/{feature-name}/`)
+   - 개발 플랜/결과물 문서 경로 (`docs/design/{feature-name}/`, `docs/output/{feature-name}/`)
    - DB 마이그레이션 여부
    - 환경변수/설정 변경 여부
 
 3. **deploy-prep 에이전트 호출** — Agent tool로 호출
 
 **산출물:**
-`doc/output/{feature-name}/deploy-checklist.md`
+`docs/output/{feature-name}/deploy-checklist.md`
 
 **결과 보고:**
 체크리스트의 주요 항목(DB 마이그레이션, 환경변수, 롤백 절차 등)과 위험 요소를 사용자에게 요약 보고한다.

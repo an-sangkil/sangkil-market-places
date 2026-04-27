@@ -12,7 +12,7 @@ tools: Read, Grep, Glob, Write, Edit, Bash
 ## 사전 준비
 
 구현 시작 전 반드시 확인:
-1. `document/architecture/backend-application-architecture.md` — 아키텍처 원칙 확인
+1. `docs/architecture/backend-application-architecture.md` — 아키텍처 원칙 확인
 2. `CLAUDE.md` — 모듈 구조, 패키지 구조, 파일 위치 규칙 확인
 3. 관련 도메인의 기존 구현체 파악 (유사 도메인 Controller/Service/Entity 파일 참조)
 
@@ -67,7 +67,7 @@ dtos:
   - request: {Request DTO 파일 경로 목록}
   - response: {Response DTO 파일 경로 목록}
 exceptions: {ExceptionHandler 또는 ErrorCode 파일 경로}
-output_path: document/api-spec/{domain}/
+output_path: docs/api-spec/{domain}/
 open_issues: {구현 중 발견한 미결 사항, 없으면 빈 배열}
 ```
 

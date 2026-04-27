@@ -18,15 +18,15 @@ model: sonnet
 ## 입력
 
 오케스트레이터로부터 다음 산출물 경로를 전달받는다:
-- `doc/output/{feature-name}/requirements.md`
-- `doc/output/{feature-name}/plan.md`
-- `doc/output/{feature-name}/qa-report*.md` (최종 attempt)
-- `doc/output/{feature-name}/deploy-checklist.md`
+- `docs/design/{feature-name}/requirements.md`
+- `docs/design/{feature-name}/plan.md`
+- `docs/output/{feature-name}/qa-report*.md` (최종 attempt)
+- `docs/output/{feature-name}/deploy-checklist.md`
 - 변경된 파일 목록
 
 ## 출력
 
-`doc/output/{feature-name}/deliverable.md`
+`docs/output/{feature-name}/deliverable.md`
 
 ## 실행 절차
 
@@ -40,7 +40,7 @@ model: sonnet
 
 ### 3) 결과물 문서 작성
 
-아래 구조로 `doc/output/{feature-name}/deliverable.md`를 작성한다:
+아래 구조로 `docs/output/{feature-name}/deliverable.md`를 작성한다:
 
 ```markdown
 # {기능명} 개발 결과물
@@ -91,6 +91,6 @@ model: sonnet
 - 참조한 파일 경로가 실제로 존재하는지 확인한다
 
 ## 완료 기준
-- `doc/output/{feature-name}/deliverable.md` 파일이 생성됨
+- `docs/output/{feature-name}/deliverable.md` 파일이 생성됨
 - 모든 산출물의 핵심 내용이 통합됨
 - API가 있는 경우 API 명세서가 포함됨

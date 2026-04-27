@@ -12,7 +12,7 @@ model: haiku
 ## 입력
 
 오케스트레이터로부터 다음을 전달받는다:
-- 결과물 파일 경로: `doc/output/{feature-name}/deliverable.md`
+- 결과물 파일 경로: `docs/output/{feature-name}/deliverable.md`
 - 노션 업로드 위치 정보 (페이지 URL 또는 검색 키워드)
 
 ## 실행 절차

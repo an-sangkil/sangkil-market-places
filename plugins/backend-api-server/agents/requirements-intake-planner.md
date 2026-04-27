@@ -20,7 +20,7 @@ tools: Read, Grep, Glob
   - `image`: 기획서 원본 이미지(모델이 OCR 추출 수행)
   - `image-ocr`: 기획서 이미지에서 추출된 OCR 텍스트
 - 소스 식별자(`source_id`)를 부여한다. 예: `POL-01`, `PRD-01`, `OCR-01`
-- `document/exec-plans/` 하위에 관련 파일이 있으면 먼저 탐색한다
+- `docs/design/` 하위에 관련 파일이 있으면 먼저 탐색한다
 
 ### 2) 이미지 입력 게이트 적용(자동 OCR 우선)
 

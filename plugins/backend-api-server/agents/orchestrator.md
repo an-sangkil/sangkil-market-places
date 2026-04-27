@@ -18,7 +18,7 @@ tools: Read, Grep, Glob, Agent, Bash
 | `requirements-intake-planner` | 기획 문서 → 요구사항 구조화 | 문서 경로/텍스트 | handoff YAML |
 | `requirements-todo-planner` | 요구사항 → 6단계 실행계획 + TODO | handoff YAML | 실행계획, TODO 표, handoff YAML |
 | `backend-implementation` | 실행계획 → 코드 구현 | 도메인, API 계약, 엔티티 목록 | 구현 파일 경로 목록 |
-| `api-spec-writing` | 코드 → API 명세서 | Controller/DTO 경로 | document/api-spec/ 파일 |
+| `api-spec-writing` | 코드 → API 명세서 | Controller/DTO 경로 | docs/api-spec/ 파일 |
 | `test-qa` | 코드 → 테스트 실행/품질/QA 체크 | 도메인, 구현 파일 경로, focus 모드 | 테스트 결과, 리뷰, QA 리포트 |
 | `backend-docs-sync` | 코드 ↔ 문서 불일치 해소 | 도메인, 변경 파일 경로 | 갱신된 문서 파일 |
 | `notion-api-spec-upload` | 명세서 → Notion 업로드 | api-spec 파일 경로 | Notion 페이지 URL |
@@ -42,7 +42,7 @@ tools: Read, Grep, Glob, Agent, Bash
        ↓
 3. backend-implementation        → 코드 구현 (Controller/Service/Repository/Entity)
        ↓
-4. api-spec-writing              → API 명세서 생성 (document/api-spec/)
+4. api-spec-writing              → API 명세서 생성 (docs/api-spec/)
    test-qa                       → 테스트 실행 + QA 검증          ← 병렬 실행
        ↓
 5. backend-docs-sync             → 문서 동기화

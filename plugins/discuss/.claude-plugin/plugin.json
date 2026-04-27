@@ -1,0 +1,10 @@
+{
+  "name": "discuss",
+  "version": "0.1.0",
+  "description": "코드 수정 없이 기술 논의/토론 모드로 전환하는 스킬을 제공한다.",
+  "author": {
+    "name": "yohan.an"
+  },
+  "license": "MIT",
+  "keywords": ["discuss", "discussion", "architecture", "korean"]
+}
