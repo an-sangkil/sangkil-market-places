@@ -23,6 +23,10 @@ ls docs/ 2>/dev/null || echo "docs/ 없음"
 - `docs/README.md`
 - `docs/architecture/data-pipeline-architecture.md`
 - `docs/architecture/code-convention.md`
+- `docs/architecture/outbox-concurrency.md`
+- `docs/architecture/outbox-idempotency-key.md`
+- `docs/architecture/outbox-leader-election.md`
+- `docs/architecture/outbox-zombie-reaper.md`
 - `docs/exec-plans/README.md`
 - `docs/product-specs/README.md`
 - `docs/references/README.md`
@@ -30,6 +34,7 @@ ls docs/ 2>/dev/null || echo "docs/ 없음"
 - `docs/references/planning/requirement-analysis-checklist.md`
 - `docs/references/development/testing-patterns.md`
 - `docs/references/development/security-checklist.md`
+- `docs/references/development/mybatis-patterns.md`
 - `docs/references/qa/triage-procedure.md`
 - `docs/references/anti-rationalization.md`
 
@@ -57,6 +62,10 @@ mkdir -p docs/{design,exec-plans,output,architecture,product-specs,references/{p
 - docs/README.md
 - docs/architecture/data-pipeline-architecture.md
 - docs/architecture/code-convention.md
+- docs/architecture/outbox-concurrency.md
+- docs/architecture/outbox-idempotency-key.md
+- docs/architecture/outbox-leader-election.md
+- docs/architecture/outbox-zombie-reaper.md
 - docs/exec-plans/README.md
 - docs/product-specs/README.md
 - docs/references/README.md
@@ -64,6 +73,7 @@ mkdir -p docs/{design,exec-plans,output,architecture,product-specs,references/{p
 - docs/references/planning/requirement-analysis-checklist.md
 - docs/references/development/testing-patterns.md
 - docs/references/development/security-checklist.md
+- docs/references/development/mybatis-patterns.md
 - docs/references/qa/triage-procedure.md
 - docs/references/anti-rationalization.md
 
