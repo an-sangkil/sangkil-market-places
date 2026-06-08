@@ -1,0 +1,10 @@
+{
+  "name": "fullstack-nextjs-fastapi",
+  "version": "0.1.0",
+  "description": "Next.js + FastAPI 풀스택 개발 파이프라인. 요구사항 분석 → 플랜 → 구현⇄QA 루프 → 배포 준비 → 인수인계 → Notion 업로드 전체 라이프사이클을 에이전트와 슬래시 커맨드로 제공한다. mydata-ai-poc 기반.",
+  "author": {
+    "name": "yohan.an"
+  },
+  "license": "MIT",
+  "keywords": ["nextjs", "fastapi", "fullstack", "pipeline", "tdd", "qa", "llm", "korean"]
+}

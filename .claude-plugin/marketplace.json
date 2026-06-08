@@ -57,6 +57,16 @@
         "name": "yohan.an"
       },
       "keywords": ["spring-boot", "data-pipeline", "event-driven", "pipeline", "tdd", "qa", "deploy", "korean"]
+    },
+    {
+      "name": "fullstack-nextjs-fastapi",
+      "source": "./plugins/fullstack-nextjs-fastapi",
+      "description": "Next.js + FastAPI 풀스택 개발 파이프라인 (spec → plan → build⇄qa → deploy → handoff → notion). mydata-ai-poc 기반.",
+      "version": "0.1.0",
+      "author": {
+        "name": "yohan.an"
+      },
+      "keywords": ["nextjs", "fastapi", "fullstack", "pipeline", "tdd", "qa", "llm", "korean"]
     }
   ]
 }

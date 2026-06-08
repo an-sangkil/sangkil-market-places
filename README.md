@@ -11,6 +11,7 @@ Backend Claude Code 플러그인 마켓플레이스
 | **discuss** | 코드 수정 없이 기술 논의/토론 모드로 전환 | discuss, architecture, korean |
 | **git-commit-korean** | Git 변경사항을 파일 단위로 검토하고 한글 커밋 메시지로 안전하게 커밋 | git, commit, korean |
 | **github-pr-korean** | 현재 브랜치의 전체 커밋을 분석하여 한글 제목과 본문으로 GitHub PR 생성 | github, pull-request, korean |
+| **fullstack-nextjs-fastapi** | Next.js + FastAPI 풀스택 개발 파이프라인 (spec → plan → build⇄qa → deploy → handoff → notion) | nextjs, fastapi, fullstack, llm |
 
 ## 설치 방법
 
